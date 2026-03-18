@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "@app/*": ["./app/*"],
+      "@modules/*": ["./modules/*"],
+      "@shared/*": ["./shared/*"],
+      "@shared/ui/*": ["./shared/ui/*"],
+      "@shared/hooks/*": ["./shared/hooks/*"],
+      "@shared/utils/*": ["./shared/utils/*"],
+      "@shared/services/*": ["./shared/services/*"],
+      "@shared/types/*": ["./shared/types/*"],
+      "@store/*": ["./store/*"],
+      "@config/*": ["./config/*"],
+      "@types/*": ["./shared/types/*"]
+    },
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "types": ["react", "react-native", "jest", "@types/node"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", ".expo"]
+}

@@ -1,0 +1,52 @@
+# Expo
+.expo/
+.expo-shared/
+dist/
+npm-debug.log
+
+# EAS Build
+eas.json.local
+
+# iOS
+ios/
+Pods/
+*.xcodeproj/
+*.xcworkspace/
+
+# Android
+android/
+local.properties
+*.jks
+*.keystore
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE
+.vscode/extensions.json
+.idea/
+.DS_Store
+.env.local
+.env*.local
+
+# Build
+build/
+dist/
+.turbo/
+.next/
+
+# Testing
+coverage/
+.jest/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+Thumbs.db
+*.log

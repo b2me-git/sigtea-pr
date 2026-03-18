@@ -1,0 +1,123 @@
+{
+  // Editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.fontFamily": "'Fira Code', 'Courier New'",
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.6,
+  "editor.minimap.enabled": true,
+  "editor.wordWrap": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+
+  // Files
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 2000,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/.expo": true,
+    "**/dist": true,
+    "**/.turbo": true
+  },
+
+  // Search
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.expo": true,
+    "**/dist": true,
+    "**/.turbo": true,
+    "**/.git": true
+  },
+
+  // TypeScript
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.preferences.importModuleSpecifierPreference": "non-relative",
+  "typescript.preferences.quotePreference": "single",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // JSON
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // Markdown
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on"
+  },
+
+  // ESLint
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.format.enable": true,
+
+  // Prettier
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "es5",
+  "prettier.bracketSpacing": true,
+  "prettier.bracketSameLine": false,
+  "prettier.arrowParens": "always",
+  "prettier.printWidth": 100,
+  "prettier.endOfLine": "lf",
+
+  // Debugging
+  "debug.console.fontSize": 12,
+  "debug.console.lineHeight": 1.5,
+
+  // Terminal
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.drawBoldTextInBrightColors": true,
+
+  // React Native / Expo
+  "javascript.validate.enable": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+
+  // Explorer
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": true,
+  "explorer.confirmDragAndDrop": true,
+
+  // Workbench
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.tree.indent": 16,
+  "workbench.editor.enablePreview": false,
+
+  // Git
+  "git.ignoreLimitWarning": true,
+
+  // Emmet
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
+}
