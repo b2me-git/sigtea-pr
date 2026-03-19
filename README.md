@@ -353,3 +353,5 @@ EXPO_PUBLIC_APP_ENV=development
 - [React Hook Form](https://react-hook-form.com/)
 - [Zod](https://zod.dev/)
 - [Supabase](https://supabase.com/docs)
+#   s i g t e a - p r  
+ 
