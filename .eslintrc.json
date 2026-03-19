@@ -32,14 +32,7 @@
     "react/prop-types": "off",
     "react-native/no-inline-styles": "warn",
     "react-native/no-unused-styles": "warn",
-    "@typescript-eslint/explicit-function-return-types": [
-      "warn",
-      {
-        "allowExpressions": true,
-        "allowTypedFunctionExpressions": true,
-        "allowHigherOrderFunctions": true
-      }
-    ],
+    "react-native/sort-styles": "warn",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {

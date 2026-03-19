@@ -14,10 +14,8 @@ export const storage = {
 
   async getItem<T>(key: string): Promise<T | null> {
     try {
-      const item = await AsyncStorage.getItem(
-        `${STORAGE_KEY_PREFIX}${key}`
-      );
-      return item ? JSON.parse(item) : null;
+      const item = await AsyncStorage.getItem(`${STORAGE_KEY_PREFIX}${key}`);
+      return item ? (JSON.parse(item) as T) : null;
     } catch (error) {
       console.error(`Error reading from storage: ${key}`, error);
       return null;
@@ -35,10 +33,8 @@ export const storage = {
   async clear(): Promise<void> {
     try {
       const keys = await AsyncStorage.getAllKeys();
-      const prefixedKeys = keys.filter((key) =>
-        key.startsWith(STORAGE_KEY_PREFIX)
-      );
-      await AsyncStorage.multiRemove(prefixedKeys);
+      const prefixedKeys = keys.filter((key: string) => key.startsWith(STORAGE_KEY_PREFIX));
+      await Promise.all(prefixedKeys.map((key) => AsyncStorage.removeItem(key)));
     } catch (error) {
       console.error('Error clearing storage', error);
     }

@@ -1,5 +1,3 @@
-import React from 'react';
-
 export type RootStackParamList = {
   index: undefined;
   NotFound: undefined;
